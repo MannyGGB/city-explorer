@@ -35,6 +35,7 @@ Built in React, using APIs and Axios.
 ## Change Log
 
 30-10-2023 14:41 – Application has a GET route for the location resource and displays the location name and coordinates.
+30-10-2023 16:30 – Application shows a map matching the location and coordinates.
 
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
@@ -75,6 +76,6 @@ Estimate of time needed to complete: 1h
 
 Start time: 14:47
 
-Finish time:
+Finish time: 16:30
 
-Actual time needed to complete:
+Actual time needed to complete: 1h 43min
