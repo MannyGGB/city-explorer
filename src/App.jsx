@@ -8,6 +8,7 @@ function App() {
   const [location, setLocation] = useState({});
   const [search, setSearch] = useState("");
   const [map, setMap] = useState("");
+  const [weather, setWeather] = useState({});
 
   async function getLocation(event) {
     event.preventDefault();
@@ -15,12 +16,19 @@ function App() {
     const response = await axios.get(API);
     setLocation(response.data[0]);
     getMap(response.data[0].lat, response.data[0].lon);
+    getWeather(response.data);
   }
 
   function getMap(lat, lon) {
     setMap(
       `https://maps.locationiq.com/v3/staticmap?key=${API_KEY}&format=png&center=${lat},${lon}&zoom=13`
     );
+  }
+  async function getWeather(event) {
+    event.preventDefault();
+    const API = `http://localhost:8080/weather?searchQuery=${event.query.value}`;
+    const response = await axios.get(API);
+    setWeather(response.data);
   }
 
   function handleChange(event) {
@@ -42,6 +50,7 @@ function App() {
         <h2>{location.display_name}</h2>
         <h3>{location.lat}</h3>
         <h3>{location.lon}</h3>
+        <h3>{weather.data}</h3>
         <img src={map} />
       </section>
     </>
