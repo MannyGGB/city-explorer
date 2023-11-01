@@ -36,6 +36,7 @@ Built in React, using APIs and Axios.
 
 30-10-2023 14:41 – Application has a GET route for the location resource and displays the location name and coordinates.
 30-10-2023 16:30 – Application shows a map matching the location and coordinates.
+01-11-2023 16:10 – Application shows live weather description and date.
 
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
@@ -44,6 +45,8 @@ Built in React, using APIs and Axios.
 ## Credit and Collaborations
 
 This was a collaborative project with Stephen Sage and the Norwich classroom.
+
+<a href="https://www.flaticon.com/free-icons/map" title="map icons">Map icons created by Freepik - Flaticon</a>
 
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
@@ -79,3 +82,15 @@ Start time: 14:47
 Finish time: 16:30
 
 Actual time needed to complete: 1h 43min
+
+---
+
+Name of feature: Weather(live)
+
+Estimate of time needed to complete: 2h
+
+Start time: 14:20
+
+Finish time: 16:10
+
+Actual time needed to complete: 1h 50min
